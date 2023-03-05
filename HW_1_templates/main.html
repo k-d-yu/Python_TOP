@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+<h1>{{ h1 }}</h1>
+<ul>
+    {% for c in car -%}
+    {% if c.price < 21000 -%}
+    <li>
+        Автомобиль {{ c.model }} стоимостью {{ c['price'] }}$
+    </li>
+    {%- else -%}
+    <li>
+        Автомобиль {{ c.model }} стоимостью более 21000$
+    </li>
+    {%- endif %}
+    {% endfor %}
+</ul>
+<p>{{ p }}</p>
+{% include 'footer.html' %}
