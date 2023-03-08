@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background: url(1.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    background-color: aquamarine;
+}
